@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets'
+const { iconUrl, techName } = Astro.props
+---
+
+<div class="Single-block">
+  <div class="icon">
+    <Image src={iconUrl} alt={techName}/>
+  </div>
+  <p>{techName}</p>
+</div>

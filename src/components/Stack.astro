@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets'
+import SingleBlock from './Single-block.astro'
+import stackIcon from '../assets/icons/stack.svg'
+import githubIcon from '../assets/icons/github.svg'
+import figmaIcon from '../assets/icons/figma.svg'
+import wordpressIcon from '../assets/icons/wordpress.svg'
+import shopifyIcon from '../assets/icons/shopify.svg'
+---
+
+<div class="Stack">
+  <div class="title-section">
+    <div class="sub-title">
+      <Image src={stackIcon} alt='stack icon'/>
+      <span>My Stacks</span>
+    </div>
+    <div class="title">
+      <h2>Tech Arsenal Stack</h2>
+    </div>
+  </div>
+  <div class="content-section">
+    <SingleBlock iconUrl={githubIcon} techName="Github" />
+    <SingleBlock iconUrl={figmaIcon} techName="figma" />
+    <SingleBlock iconUrl={wordpressIcon} techName="Wordpress" />
+    <SingleBlock iconUrl={shopifyIcon} techName="Shopify" />
+  </div>
+</div>
