@@ -5,14 +5,27 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				montserrat: ['Montserrat'],
-				anton: ['Anton'],
+				manrope: ['"Manrope", serif;'],
 			},
 			colors: {
-				'primary': '#14181b',
-				'green_soft': '#65d28e',
+				'dark_06': '#101010',
+				'dark_10': '#191919',
+				'dark_16': '#282828',
+				'gray_40': '#666666',
+				'gray_46': '#757575',
+				'gray_46': '#999999',
+				'gray_80': '#CCCCCC',
+				'gray_85': '#D9D9D9',
+				'gray_90': '#E6E6E6',
+				'gray_95': '#F2F2F2',
+				'gray_99': '#FCFCFC',
 			},
 		},
+		screens: {
+			'tablet': '810px',
+			'laptop': '1440px',
+			'desktop': '1800px'
+		}
 	},
 	plugins: [
 		require('tailwindcss-debug-screens')

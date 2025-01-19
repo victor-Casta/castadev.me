@@ -1,17 +1,53 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Stack from "../components/Stack.astro"
-import '../styles/main.css'
+import Layout from "../layouts/Layout.astro";
+import Stack from "../components/Stack.astro";
+import "../styles/main.css";
 ---
 
 <Layout title="castadev">
-  <main class="principal-container">
-    <section>
-      <div>
-        <Stack />
+  <main class="layout-container">
+    <section class="layout-left">
+      <div class="left-section__top">
+        <div class="top-content__primary">
+          <div class="stock-box"></div>
+          <div class="works-box"></div>
+        </div>
+        <div class="top-content__secondary">
+          <div class="stats-grid">
+            <div class="stat-box"></div>
+            <div class="stat-box"></div>
+            <div class="stat-box"></div>
+            <div class="resume-box"></div>
+          </div>
+          <div class="profile-box"></div>
+        </div>
       </div>
-      <div></div>
+      <div class="left-section__bottom">
+        <div class="bottom-content__primary">
+          <div class="services-box"></div>
+        </div>
+        <div class="bottom-content__secondary">
+          <div class="clients-box"></div>
+        </div>
+      </div>
     </section>
-    <section></section>
+    <section class="layout-right">
+      <div class="right-section__top">
+        <div class="top-right__primary">
+          <div class="testimonials-box"></div>
+        </div>
+        <div class="top-right__secondary">
+          <div class="work-process-box"></div>
+        </div>
+      </div>
+      <div class="right-section__bottom">
+        <div class="bottom-right__content">
+          <div class="follow-me-box"></div>
+        </div>
+        <div class="bottom-left__content">
+          <div class="contact-box"></div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>

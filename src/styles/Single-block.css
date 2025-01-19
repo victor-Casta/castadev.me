@@ -1,0 +1,11 @@
+div.Single-block {
+  @apply flex gap-2 items-center bg-dark_10 p-2 rounded-xl border border-dark_16;
+}
+
+div.Single-block .icon {
+  @apply w-9 h-9 flex justify-center items-center bg-dark_16 rounded-lg;
+}
+
+div.Single-block p {
+  @apply text-base text-gray_80 font-light;
+}
