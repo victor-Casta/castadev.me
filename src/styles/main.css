@@ -17,7 +17,7 @@ main.layout-container .layout-left .left-section__top .top-content__primary {
   @apply grid gap-2 grid-cols-1 tablet:grid-cols-1 tablet:col-span-5;
 }
 main.layout-container .layout-left .left-section__top .top-content__primary .stock-box {
-  @apply bg-purple-100;
+  @apply h-fit;
 }
 main.layout-container .layout-left .left-section__top .top-content__primary .works-box {
   @apply bg-purple-400;
