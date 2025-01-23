@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import "../styles/Work.css";
+import bag from "../assets/icons/bag.svg";
+import ikironkaProject from "../assets/images/ikironka.png";
+import vineProject from "../assets/images/vine.png";
+import melborpProject from "../assets/images/mbp-onboarding.png";
+import publiProject from "../assets/images/publi.png";
+import puremProject from "../assets/images/puremoda.png";
+import medicina from "../assets/images/medicina.png";
+---
+
+<div class="Work">
+  <div class="title-section">
+    <div class="title">
+      <Image src={bag} alt="bag icon" />
+      <span>Projects</span>
+    </div>
+    <h2>works gallery</h2>
+  </div>
+  <div class="images-section">
+    <Image class:list="project-image" src={ikironkaProject} alt="ikironka" />
+    <Image class:list="project-image" src={vineProject} alt="vine" />
+    <Image
+      class:list="project-image"
+      src={melborpProject}
+      alt="Melborp postulaciones"
+    />
+    <Image class:list="project-image" src={publiProject} alt="publistar" />
+    <Image class:list="project-image" src={puremProject} alt="puremoda" />
+    <Image class:list="project-image" src={medicina} alt="medicina segura" />
+    <Image class:list="project-image" src={ikironkaProject} alt="ikironka" />
+    <Image class:list="project-image" src={vineProject} alt="vine" />
+    <Image
+      class:list="project-image"
+      src={melborpProject}
+      alt="Melborp postulaciones"
+    />
+    <Image class:list="project-image" src={publiProject} alt="publistar" />
+    <Image class:list="project-image" src={puremProject} alt="puremoda" />
+    <Image class:list="project-image" src={medicina} alt="medicina segura" />
+    <Image class:list="project-image" src={ikironkaProject} alt="ikironka" />
+    <Image class:list="project-image" src={vineProject} alt="vine" />
+    <Image
+      class:list="project-image"
+      src={melborpProject}
+      alt="Melborp postulaciones"
+    />
+    <Image class:list="project-image" src={publiProject} alt="publistar" />
+    <Image class:list="project-image" src={puremProject} alt="puremoda" />
+    <Image class:list="project-image" src={medicina} alt="medicina segura" />
+    <Image class:list="project-image" src={ikironkaProject} alt="ikironka" />
+    <Image class:list="project-image" src={vineProject} alt="vine" />
+    <Image
+      class:list="project-image"
+      src={melborpProject}
+      alt="Melborp postulaciones"
+    />
+    <Image class:list="project-image" src={publiProject} alt="publistar" />
+    <Image class:list="project-image" src={puremProject} alt="puremoda" />
+    <Image class:list="project-image" src={medicina} alt="medicina segura" />
+  </div>
+  <a href="https://castadev.online" class="view-works">View Works</a>
+</div>
+
+<script>
+  import { gsap } from "gsap";
+
+  gsap.to(".project-image", {
+  duration: 32,
+  ease: "none",
+  x: "-=900",
+  repeat: -1
+});
+</script>

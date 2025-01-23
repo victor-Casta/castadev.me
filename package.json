@@ -3,7 +3,8 @@
     "@astrojs/netlify": "^3.0.1",
     "@astrojs/tailwind": "^5.1.4",
     "@midudev/tailwind-animations": "^0.0.7",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "gsap": "^3.12.7"
   },
   "name": "castadev.me",
   "description": "This project showcases my personal portfolio, a window into my journey in the world of development. Here you'll find a collection of projects that reflect my passion and skills in the technology field. Explore, discover, and connect! ✨",

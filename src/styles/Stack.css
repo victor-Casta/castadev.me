@@ -1,5 +1,5 @@
 div.Stack {
-  @apply  bg-dark_06 rounded-2xl border border-dark_16 px-5 py-3 flex flex-col gap-5 justify-center;
+  @apply w-full h-full bg-dark_06 rounded-2xl border border-dark_16 px-5 py-3 flex flex-col gap-5 justify-center;
 }
 
 div.Stack .title-section {
@@ -7,11 +7,11 @@ div.Stack .title-section {
 }
 
 div.Stack .title-section .sub-title {
-  @apply flex gap-2 text-base font-normal text-gray_46;
+  @apply flex gap-2 text-base font-normal text-gray_46 desktop:text-lg;
 }
 
 div.Stack .title-section h2 {
-  @apply text-lg font-semibold text-gray_90;
+  @apply text-lg font-semibold text-gray_90 desktop:text-xl;
 }
 
 div.Stack .content-section {

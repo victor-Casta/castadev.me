@@ -8,7 +8,7 @@ module.exports = {
 				manrope: ['"Manrope", serif;'],
 			},
 			colors: {
-				'dark_06': '#101010',
+				'dark_06': '#161616',
 				'dark_10': '#191919',
 				'dark_16': '#282828',
 				'gray_40': '#666666',
@@ -19,6 +19,7 @@ module.exports = {
 				'gray_90': '#E6E6E6',
 				'gray_95': '#F2F2F2',
 				'gray_99': '#FCFCFC',
+				'purple_78': '#A291FD'
 			},
 		},
 		screens: {
