@@ -1,5 +1,5 @@
 main.layout-container {
-  @apply w-full h-screen max-w-[390px] grid gap-2 grid-cols-1 tablet:max-w-[810px] laptop:max-w-[1440px] laptop:max-h-[696px] laptop:grid-rows-1 laptop:grid-cols-12 desktop:max-w-[1800px] desktop:max-h-[896px];
+  @apply w-full h-screen max-w-[390px] grid gap-2 grid-cols-1 tablet:max-w-[810px] laptop:max-w-[1540px] laptop:max-h-[696px] laptop:grid-rows-1 laptop:grid-cols-12 desktop:max-w-[1800px] desktop:max-h-[896px];
 }
 
 main.layout-container .layout-left {
@@ -40,8 +40,13 @@ main.layout-container .layout-left .left-section__top .top-content__secondary .p
 main.layout-container .layout-left .left-section__bottom {
   @apply row-span-4 grid gap-2 grid-cols-1 tablet:grid-cols-12;
 }
+
 main.layout-container .layout-left .left-section__bottom .bottom-content__primary {
-  @apply bg-blue-100 tablet:col-span-5;
+  @apply tablet:col-span-5;
+}
+
+main.layout-container .layout-left .left-section__bottom .bottom-content__primary .services-box {
+  @apply h-full overflow-hidden;
 }
 main.layout-container .layout-left .left-section__bottom .bottom-content__secondary {
   @apply bg-blue-400 tablet:col-span-7;

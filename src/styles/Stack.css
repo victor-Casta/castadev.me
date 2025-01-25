@@ -1,17 +1,21 @@
 div.Stack {
-  @apply w-full h-full bg-dark_06 rounded-2xl border border-dark_16 px-5 py-3 flex flex-col gap-5 justify-center;
+  @apply w-full h-full bg-dark_06 rounded-2xl border border-dark_16 px-5 py-3 flex flex-col justify-center;
 }
 
 div.Stack .title-section {
-  @apply flex flex-col justify-center items-center gap-2;
+  @apply flex flex-col justify-center items-center gap-1 mb-5 desktop:gap-2;
+}
+
+div.Stack .title-section img {
+  @apply w-5 desktop:w-6;
 }
 
 div.Stack .title-section .sub-title {
-  @apply flex gap-2 text-base font-normal text-gray_46 desktop:text-lg;
+  @apply flex gap-2 text-sm font-normal text-gray_46 desktop:text-lg;
 }
 
 div.Stack .title-section h2 {
-  @apply text-lg font-semibold text-gray_90 desktop:text-xl;
+  @apply text-base font-semibold text-gray_90 desktop:text-xl;
 }
 
 div.Stack .content-section {

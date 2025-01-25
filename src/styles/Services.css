@@ -1,0 +1,48 @@
+div.Services {
+  @apply w-full h-full bg-dark_06 border border-dark_16 rounded-2xl py-3 flex flex-col justify-center items-center overflow-x-hidden relative;
+}
+
+div.Services .title-section {
+  @apply flex flex-col justify-center items-center gap-1 mb-6;
+}
+
+div.Services .title-section img {
+  @apply w-5 desktop:w-6;
+}
+
+div.Services .title-section .title {
+  @apply flex gap-2 items-center justify-center;
+}
+
+div.Services .title-section .title span {
+  @apply flex gap-2 text-sm font-normal text-gray_46 desktop:text-lg;
+}
+
+div.Services .title-section h2 {
+  @apply text-base font-semibold text-gray_90 desktop:text-xl;
+}
+
+div.Services .animation__container {
+  @apply w-full flex flex-col gap-2 relative overflow-hidden;
+}
+
+div.Services .animation__container::after {
+  @apply absolute w-24 h-full left-0 content-[''] bg-gradient-to-r from-dark_06 from-20% via-dark_06 via-10%;
+}
+
+div.Services .animation__container::before {
+  @apply absolute z-50 w-24 h-full right-0 content-[''] bg-gradient-to-l from-dark_06 from-20% via-dark_06 via-10%;
+}
+
+div.Services .animation__container .to-left__container,
+div.Services .animation__container .to-right__container {
+  @apply flex gap-2;
+}
+
+div.Services .animation__container .to-right__container {
+  @apply flex-row-reverse;
+}
+
+div.Services .view-services {
+  @apply w-[50%] h-fit absolute bg-purple_78 flex justify-center items-center py-3 bottom-3 rounded-xl font-manrope font-normal text-sm desktop:text-base border-4 border-dark_16;
+}

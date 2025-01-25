@@ -1,12 +1,19 @@
 ---
 import { Image } from 'astro:assets'
-const { iconUrl, techName } = Astro.props
 import '../styles/Single-block.css'
+
+interface Props {
+  iconUrl: ImageMetadata,
+  techName: string,
+  customClass?: string
+}
+
+const { iconUrl, techName, customClass = '' } = Astro.props
 ---
 
-<div class="Single-block">
+<div class={`Single-block ${customClass}`}>
   <div class="icon">
-    <Image src={iconUrl} alt={techName}/>
+    <Image src={iconUrl} alt={techName} />
   </div>
   <p>{techName}</p>
 </div>

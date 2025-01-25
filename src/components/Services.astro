@@ -1,0 +1,78 @@
+---
+  import { Image } from 'astro:assets'
+  import SingleBlock from './Single-block.astro'
+  import servicesIcon from '../assets/icons/services.svg'
+  import codeIcon from '../assets/icons/code.svg'
+  import bag2Icon from '../assets/icons/bag-2.svg'
+  import engineIcon from '../assets/icons/engine.svg'
+  import webIcon from '../assets/icons/web.svg'
+  import automationIcon from '../assets/icons/automation.svg'
+  import '../styles/Services.css'
+---
+
+<div class="Services">
+  <div class="title-section">
+    <div class="title">
+      <Image src={servicesIcon} alt="Services icon" />
+      <span>Services</span>
+    </div>
+    <h2>Solutions Suite</h2>
+  </div>
+  <div class="animation__container">
+    <div class="to-right__container">
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__right" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__right" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__right" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__right" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__right" />
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__right" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__right" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__right" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__right" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__right" />
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__right" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__right" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__right" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__right" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__right" />
+    </div>
+    <div class="to-left__container">
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__left" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__left" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__left" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__left" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__left" />
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__left" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__left" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__left" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__left" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__left" />
+      <SingleBlock iconUrl={bag2Icon} techName="Online store development" customClass="service-item__left" />
+      <SingleBlock iconUrl={engineIcon} techName="Search Engine Optimization" customClass="service-item__left" />
+      <SingleBlock iconUrl={codeIcon} techName="Frontend development" customClass="service-item__left" />
+      <SingleBlock iconUrl={automationIcon} techName="Process automation" customClass="service-item__left" />
+      <SingleBlock iconUrl={webIcon} techName="Web performance optimization" customClass="service-item__left" />
+    </div>
+  </div>
+  <a href="#" class="view-services">View all services</a>
+</div>
+
+<script>
+  import { gsap } from "gsap"
+
+  const animationTemplate = (direction: string, repeat: number) => {
+    const itemTemplate = {
+    duration: 42,
+    ease: "none",
+    x: direction,
+    repeat: repeat
+  }
+
+    return itemTemplate
+  }
+
+  const tlr = gsap.timeline()
+  const tll = gsap.timeline()
+  tlr.to('.service-item__right', animationTemplate("+=900", -1))
+  tll.to('.service-item__left', animationTemplate("-=900", -1))
+</script>
