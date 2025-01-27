@@ -32,7 +32,7 @@ main.layout-container .layout-left .left-section__top .top-content__secondary .s
   @apply bg-red-800 tablet:hidden;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .stat-box {
-  @apply bg-emerald-300;
+  @apply overflow-hidden;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary .profile-box {
   @apply bg-orange-300 row-span-8;

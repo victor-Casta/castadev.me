@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Stack from "../components/Stack.astro";
 import Work from "../components/Work.astro";
 import Services from "../components/Services.astro";
+import Stats from "../components/Stats.astro";
+import flagIcon from "../assets/icons/flag.svg"
+import meteorIcon from "../assets/icons/meteor.svg"
+import happyIcon from "../assets/icons/happy.svg"
 import "../styles/main.css";
 ---
 
@@ -20,9 +24,15 @@ import "../styles/main.css";
         </div>
         <div class="top-content__secondary">
           <div class="stats-grid">
-            <div class="stat-box"></div>
-            <div class="stat-box"></div>
-            <div class="stat-box"></div>
+            <div class="stat-box">
+              <Stats principalStat={10} titleStats={'Projects'} iconStats={flagIcon} />
+            </div>
+            <div class="stat-box">
+              <Stats principalStat={5} titleStats={'Happy Clients'} iconStats={happyIcon} />
+            </div>
+            <div class="stat-box">
+              <Stats principalStat={3} titleStats={'Year Expertise'} iconStats={meteorIcon} />
+            </div>
             <div class="resume-box"></div>
           </div>
           <div class="profile-box"></div>

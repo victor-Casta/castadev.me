@@ -1,0 +1,21 @@
+---
+  import { Image } from 'astro:assets'
+  interface Props {
+    principalStat: number,
+    titleStats: string,
+    iconStats: ImageMetadata
+  }
+  const { principalStat, titleStats, iconStats } = Astro.props
+
+  import '../styles/Stats.css'
+---
+
+<div class="Stats">
+  <div class="principal-stat">
+    <p>{ principalStat }</p><span>+</span>
+  </div>
+  <div class="title-stat">
+    <Image src={ iconStats } alt="stats icon" />
+    <p class="title__stats">{ titleStats }</p>
+  </div>
+</div>

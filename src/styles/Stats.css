@@ -1,0 +1,27 @@
+div.Stats {
+  @apply w-full h-full min-h-[150px] tablet:min-h-max bg-dark_06 rounded-2xl border border-dark_16 px-2 flex flex-col justify-center;
+}
+
+div.Stats .principal-stat {
+  @apply flex items-center justify-center;
+}
+
+div.Stats .principal-stat p {
+  @apply text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-gray_46 via-gray_46 to-dark_06;
+}
+
+div.Stats .principal-stat span {
+  @apply text-2xl font-semibold text-purple_78;
+}
+
+div.Stats .title-stat {
+  @apply mt-3 py-1 flex justify-center items-center gap-2 border border-dark_16 rounded-full;
+}
+
+div.Stats .title-stat img {
+  @apply w-4;
+}
+
+div.Stats .title-stat p {
+  @apply text-gray_80 text-sm;
+}
