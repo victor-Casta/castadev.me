@@ -29,8 +29,20 @@ main.layout-container .layout-left .left-section__top .top-content__secondary .s
   @apply grid gap-2 grid-cols-2 grid-rows-2 tablet:grid-cols-3 tablet:grid-rows-1 row-span-4;
 }
 main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .resume-box {
-  @apply bg-red-800 tablet:hidden;
+  @apply w-full h-full bg-dark_06 rounded-2xl border border-dark_16 px-5 py-3 flex gap-2 justify-center items-center tablet:hidden;
 }
+main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .resume-box .icon-resume {
+  @apply w-14 h-14 rounded-xl border border-dark_16 bg-dark_10 flex justify-center items-center;
+}
+
+main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .resume-box .icon-resume img {
+  @apply w-7 h-7 object-cover;
+}
+
+main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .resume-box p{
+  @apply font-normal text-lg text-gray_80;
+}
+
 main.layout-container .layout-left .left-section__top .top-content__secondary .stats-grid .stat-box {
   @apply overflow-hidden;
 }
